@@ -1,0 +1,37 @@
+.default-modal-fieldset.statistic-page,
+.default-modal-fieldset.statistic-page {
+  border: none;
+  width: 27rem;
+}
+.default-modal-fieldset.statistic-page > input[type="text"] {
+  color: red;
+  font-size: 1.25rem;
+}
+.category-barchart-spinner-wrapper {
+  width: 342px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category-statistics-data-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.category-statistics-table-wrapper,
+.categories-statistics-details-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categories-statistic-brachart-footer {
+  text-align: end;
+  border-top: solid 1px rgb(55, 55, 55, 0.5);
+  color: var(--primaryColor);
+}
+.category-statistic-barchart-wrapper {
+  background-color: white;
+  padding-right: 1.5rem;
+}

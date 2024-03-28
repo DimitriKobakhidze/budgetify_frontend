@@ -1,0 +1,19 @@
+.alert-dialog {
+  border: none;
+  margin: auto;
+}
+.alert-dialog::backdrop {
+  background-color: var(--primaryModalBgColor);
+}
+.alert-modal-section {
+  width: 40rem;
+  background-color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.alert-modal-paragraph {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}

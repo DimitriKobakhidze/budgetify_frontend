@@ -1,0 +1,6 @@
+.piggy-bank-section {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

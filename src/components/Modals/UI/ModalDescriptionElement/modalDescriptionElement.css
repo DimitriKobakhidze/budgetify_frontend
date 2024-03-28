@@ -1,0 +1,18 @@
+.modal-description-element {
+  display: flex;
+  gap: 1rem;
+  align-content: center;
+  color: #373737;
+  font-size: 1.25rem;
+  padding-block: 1rem;
+}
+.modal-description-element:not(:last-child) {
+  border-bottom: solid 1px black;
+}
+.modal-description-element-caption {
+  flex-shrink: 0;
+  display: block;
+  font-weight: bold;
+  width: 10rem;
+  word-wrap: break-word;
+}

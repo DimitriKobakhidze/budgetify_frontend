@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Space+Grotesk:wght@400;600;700&display=swap");
+:root {
+  --mainFontFamily: "Space Grotesk", sans-serif;
+  --secondaryFontFamily: "Alata", sans-serif;
+  --primaryColor: #373737;
+  --primaryModalBgColor: rgba(51, 51, 51, 0.4);
+  --piggyDarkPink: #ff76ae;
+  --piggyLightPink: #fecee2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFontFamily);
+}
+#root {
+  max-width: 1512px;
+  margin: auto;
+}
+body {
+  background-color: #eceded;
+}
+.default-main {
+  min-height: 100vh;
+  padding: 1rem 2.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.default-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: calc(100dvh - 11rem);
+}
+.default-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  height: 100dvh;
+  width: 100%;
+  background-color: var(--primaryModalBgColor);
+  z-index: 1;
+}
+.default-modal-wrapper {
+  width: 36.75rem;
+  height: 100vh;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.default-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primaryColor);
+  font-size: 2rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.default-modal-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.default-modal-properties-ctn {
+  color: var(--primaryColor);
+}
+.default-modal-properties-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.default-modal-title {
+  font-size: 1.5rem;
+}
+.default-page-error-caption {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+.rdrCalendarWrapper,
+.rdrDateRangeWrapper {
+  width: 512px;
+}
+.default-statistic-table {
+  background-color: white;
+  border-collapse: collapse;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.default-statistic-table thead {
+  background-color: #d5f1ec;
+}
+.default-statistic-table th {
+  text-align: left;
+  padding: 0 1rem;
+  width: 8.5rem;
+  white-space: nowrap;
+}
+.default-statistic-table-title-th {
+  width: 12rem !important;
+}
+.default-statistic-table tr {
+  height: 2.5rem;
+}
+.default-statistic-table tbody tr {
+  border-bottom: 1px solid rgba(55, 55, 55, 0.5);
+  color: var(--primaryColor);
+  font-size: 14px;
+}
+.default-statistic-table td {
+  padding: 0 1rem;
+}

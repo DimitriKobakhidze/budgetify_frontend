@@ -1,0 +1,8 @@
+.modal-form-errors-container {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-error {
+  color: #cc0000;
+  font-weight: bold;
+}

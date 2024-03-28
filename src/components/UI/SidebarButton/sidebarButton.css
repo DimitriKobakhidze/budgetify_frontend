@@ -1,0 +1,30 @@
+.sidebar-button-ctn {
+  width: 14.5rem;
+  border-radius: 10px;
+  background-color: #b9e2e6;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primaryColor);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding-block: 0.5rem;
+}
+.sidebar-button-icon-ctn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  color: #86c9cf;
+  font-size: 1.75em;
+}
+.sidebar-button-ctn img {
+  width: 36px;
+  height: 36px;
+}
+.bg-white {
+  background-color: white;
+}

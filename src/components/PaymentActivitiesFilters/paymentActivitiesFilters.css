@@ -1,0 +1,24 @@
+.payment-section-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  color: #474747;
+  gap: 0.5rem;
+}
+.payment-date-sort-ctn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.payment-date-sort-ctn img {
+  cursor: pointer;
+}
+.payment-date-search,
+.payment-name-input::placeholder {
+  border: none;
+  color: inherit;
+  font-size: 1.25rem;
+  color: inherit;
+  opacity: 1;
+  outline: none;
+}

@@ -1,0 +1,15 @@
+.modal-categories {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+}
+.modal-category-item {
+  flex-shrink: 0;
+  width: 9.75rem;
+  border: solid 1px black;
+  text-align: center;
+  border-radius: 10px;
+  padding-block: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}

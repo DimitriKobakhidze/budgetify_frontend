@@ -1,0 +1,79 @@
+.login-page-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  height: 100vh;
+  width: 100dvw;
+  background-image: url("/public/money-savings-currency-fingers1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(32%, 32.1rem);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4.75rem 5rem;
+  border-radius: 10px;
+  gap: 1.9rem;
+}
+.form-heading {
+  font-family: var(--secondaryFontFamily);
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #333333;
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form input {
+  width: 100%;
+  font-family: var(--mainFontFamily);
+  font-size: 1.125rem;
+  padding-block: 1rem;
+  padding-left: 1.125rem;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.form input::placeholder {
+  color: #474747;
+}
+.form input:focus::placeholder {
+  color: transparent;
+}
+.input-error-span {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  padding-left: 0.4rem;
+}
+.password-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.form-button {
+  width: 100%;
+  font-family: var(--mainFontFamily);
+  color: var(--primaryColor);
+  font-size: 1.125rem;
+  border: none;
+  padding-block: 1.125rem;
+  background-color: #b9e2e6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.activated-button {
+  background-color: green;
+}

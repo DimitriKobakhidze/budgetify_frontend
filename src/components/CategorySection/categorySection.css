@@ -1,0 +1,10 @@
+.category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}

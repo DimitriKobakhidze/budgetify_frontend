@@ -1,0 +1,58 @@
+.payment-card-ctn {
+  width: 40rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.payment-card-category {
+  width: 9.75rem;
+  display: grid;
+  place-items: center;
+  padding-block: 1.25rem;
+  background-color: #eceded;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+.payment-card-details-ctn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.payment-card-details-top {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-card-title {
+  font-size: 1.25rem;
+  color: var(--primaryColor);
+}
+.payment-card-amount-income {
+  font-size: 1.5rem;
+  color: #21c206;
+}
+.payment-card-amount-expenses {
+  font-size: 1.5rem;
+  color: #ee3f19;
+}
+.payment-card-amount-expenses::before {
+  content: "-";
+}
+.payment-card-details-bottom {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.payment-card-payment-date,
+.payment-card-payment-date-value {
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
+.payment-card-payment-date-value {
+  font-weight: bold;
+}

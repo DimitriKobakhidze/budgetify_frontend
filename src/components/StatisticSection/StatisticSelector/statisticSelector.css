@@ -1,0 +1,30 @@
+.statistic-selector-ctn {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.statistic-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.25rem;
+  border: solid 2px var(--primaryColor);
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+  text-decoration: none;
+  color: var(--primaryColor);
+  width: 14rem;
+  background-color: white;
+}
+.statistic-selector:last-child {
+  position: relative;
+  left: -1rem;
+}
+.statistic-selector.active {
+  opacity: 1;
+  z-index: 2;
+}

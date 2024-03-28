@@ -1,0 +1,36 @@
+.category-item {
+  font-size: 1.25rem;
+  color: var(--primayColor);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.category-item.income {
+  border: solid 2px #21c206;
+}
+.category-item.expense {
+  border: solid 2px #ee3f19;
+}
+.category-item img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.category-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.category-item-input {
+  border: none;
+  font-size: 1.25rem;
+  color: var(--primaryColor);
+  min-width: 100px;
+  border-bottom: 1px solid transparent;
+  outline: none;
+}
+.category-item-input.active {
+  border-bottom: 1px solid var(--primaryColor);
+}

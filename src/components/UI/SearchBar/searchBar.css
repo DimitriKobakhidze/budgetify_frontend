@@ -1,0 +1,16 @@
+.search-bar-ctn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.search-bar-ctn img {
+  cursor: pointer;
+}
+.search-bar-input {
+  border: none;
+  color: inherit;
+  font-size: 1.25rem;
+  color: inherit;
+  opacity: 1;
+  outline: none;
+}

@@ -1,0 +1,9 @@
+.default-statistic-table tbody td.positive {
+  color: #159700;
+}
+.default-statistic-table tbody td.negative {
+  color: #ee3f19;
+}
+.bold-td {
+  font-weight: bold;
+}

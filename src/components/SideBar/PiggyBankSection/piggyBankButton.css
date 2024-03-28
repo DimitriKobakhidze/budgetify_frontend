@@ -1,0 +1,29 @@
+.sidebar-button-ctn.pink {
+  background-color: #fecee2;
+}
+.piggy-bank-details-ctn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.piggy-details-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.piggy-details {
+  display: flex;
+  flex-direction: column;
+}
+.piggy-details-title {
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: var(--primaryColor);
+}
+.piggy-details-numbers {
+  font-size: 0.75rem;
+  color: var(--primaryColor);
+}
+.piggy-details-pr-bar {
+  height: 6px;
+}

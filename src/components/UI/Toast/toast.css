@@ -1,0 +1,15 @@
+.toast-container {
+  background-color: #f8d7e7;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+.toast-close-wrapper {
+  cursor: pointer;
+}
+.toast-close-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+}

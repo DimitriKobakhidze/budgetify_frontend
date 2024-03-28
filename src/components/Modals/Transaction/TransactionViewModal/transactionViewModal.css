@@ -1,0 +1,6 @@
+.transaction-modal-type {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.25rem;
+}

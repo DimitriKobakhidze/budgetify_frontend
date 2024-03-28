@@ -1,0 +1,16 @@
+.modal-properties-important {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-amount-expense {
+  font-size: 2.25rem;
+  color: #ee3f19;
+}
+.modal-amount-income {
+  font-size: 2.25rem;
+  color: #21c206;
+}
+.modal-amount-expense::before {
+  content: "-";
+}

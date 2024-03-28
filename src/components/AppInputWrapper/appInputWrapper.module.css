@@ -1,0 +1,20 @@
+.input-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  border: 1px #333333 solid;
+  border-radius: 10px;
+}
+.errored-input {
+  border-color: red;
+}
+.input-caption {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  color: #474747;
+}

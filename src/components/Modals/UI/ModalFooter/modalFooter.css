@@ -1,0 +1,17 @@
+.modal-footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  align-self: flex-end;
+  color: var(--primaryColor);
+  font-size: 1.25rem;
+}
+.modal-footer-close,
+.modal-footer-save {
+  cursor: pointer;
+  padding: 12px 24px;
+}
+.modal-footer-save {
+  background-color: #b9e2e6;
+  border-radius: 10px;
+}
