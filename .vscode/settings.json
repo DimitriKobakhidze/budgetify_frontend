@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/e08f9b1e-3d8d-4f2b-9892-a8a84737e895/resourceGroups/budgetify-frontend/providers/Microsoft.Web/sites/budgetify-frontend",
+  "appService.deploySubpath": "."
+}
