@@ -1,7 +1,7 @@
 import { addMonths, parseISO } from "date-fns";
 
 export const emailRegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-export const numberRegExp = /^[0-9]+$/;
+export const numberRegExp = /^(?!0(\.0*)?$)\d*(\.\d+)?$/;
 
 const isDateValidType = (date) => {
   return date instanceof Date || typeof date === "string";
