@@ -4,6 +4,7 @@ axios.defaults.withCredentials = true;
 const apiBase = process.env.REACT_APP_API_BASE;
 
 export const login = async (userData) => {
+  console.log(userData);
   const res = await axios.post(`${apiBase}/login`, userData);
 
   return res.data;
