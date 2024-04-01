@@ -3,20 +3,10 @@ import { useState } from "react";
 import SidebarButton from "../../UI/SidebarButton/SidebarButton";
 import SubscriptionFormModal from "../../Modals/Subscription/SubscriptionFormModal";
 import usePaymentAddition from "../../../hooks/usePaymentAddition";
-import { useNavigate } from "react-router";
 
 const AddSubscriptionButton = () => {
-  const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
-  const { addPayment } = usePaymentAddition();
-
-  const handleSubscriptionAddition = async (subscriptionData, handleClose) => {
-    try {
-      await addPayment("subscriptions", subscriptionData, handleClose);
-    } catch (e) {
-      navigate("/error");
-    }
-  };
+  const { addPayment } = usePaymentAddition("subscriptions");
 
   return (
     <>
@@ -24,7 +14,7 @@ const AddSubscriptionButton = () => {
         <SubscriptionFormModal
           formTitle="Add Subscription"
           handleClose={() => setShowModal(false)}
-          handleForm={handleSubscriptionAddition}
+          handleForm={addPayment}
         />
       )}
       <SidebarButton

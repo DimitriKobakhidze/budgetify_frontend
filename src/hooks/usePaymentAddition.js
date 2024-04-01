@@ -3,19 +3,20 @@ import { useStore } from "../store/store";
 import { addUserPayment } from "../services/apiService";
 import { useNavigate } from "react-router";
 
-const usePaymentAddition = () => {
+const usePaymentAddition = (paymentType) => {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const primaryCard = useStore((state) => state.userData.primaryCard);
 
-  const addPayment = async (paymentType, paymentData, handleCloseModal) => {
+  const addPayment = async (paymentData, handleCloseModal) => {
     try {
       await addUserPayment(primaryCard._id, paymentType, {
         ...paymentData,
         currency: primaryCard.currency,
       });
-      handleCloseModal();
+      await useStore.getState().refetchUserCards();
       queryClient.invalidateQueries(paymentType);
+      handleCloseModal();
     } catch (err) {
       navigate("/error");
     }
