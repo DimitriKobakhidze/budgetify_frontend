@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./loginPage.css";
 import { emailRegExp } from "../../utils/utils";
@@ -140,6 +140,17 @@ const Login = () => {
         >
           Login
         </button>
+        <div className="login-options-ctn">
+          <span className="login-no-account-span">
+            Don't have account?{" "}
+            <Link className="login-register-link" to="/register">
+              Register
+            </Link>
+          </span>
+          <span>Or you can use test user:</span>
+          <span className="login-default-user-span">user@example.com </span>
+          <span className="login-default-user-span">password </span>
+        </div>
       </div>
     </main>
   );

@@ -77,3 +77,23 @@
 .activated-button {
   background-color: green;
 }
+.login-options-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.login-no-account-span {
+  font-size: 1.25rem;
+}
+.login-register-link {
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-style: italic;
+}
+.login-default-user-span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: green;
+}

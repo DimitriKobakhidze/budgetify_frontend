@@ -5,7 +5,6 @@ import { useQuery } from "react-query";
 
 const useStatisticSetup = (apiCall, queryKey, subStartMonth = 1) => {
   const primaryCard = useStore((state) => state.userData.primaryCard);
-  console.log(subStartMonth);
   const [date, setDate] = useState([
     {
       startDate: subMonths(new Date(), subStartMonth),

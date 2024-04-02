@@ -10,6 +10,10 @@ import Error from "./views/Error/Error";
 
 export const publicRoutes = [
   {
+    path: "/register",
+    elemement: <h1>Registe page</h1>,
+  },
+  {
     path: "/",
     elemement: <Navigate to="/login" />,
   },

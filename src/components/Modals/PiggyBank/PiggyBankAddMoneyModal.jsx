@@ -12,6 +12,7 @@ import { addToPiggyBank } from "../../../services/apiService";
 import { useQueryClient } from "react-query";
 import { format } from "date-fns";
 import { useNavigate } from "react-router";
+import { useStore } from "../../../store/store";
 
 const PiggyBankAddMoneyModal = ({ piggyData, handleClose }) => {
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ const PiggyBankAddMoneyModal = ({ piggyData, handleClose }) => {
         savedAmount: amountRef.current.value,
         cardId: piggyData.cardId,
       });
+      await useStore.getState().refetchUserCards();
       queryClient.invalidateQueries("piggyBanks");
       handleClose();
     } catch (err) {

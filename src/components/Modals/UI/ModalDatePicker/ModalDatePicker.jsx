@@ -11,7 +11,6 @@ const ModalDatePicker = ({
   customClasses = "",
 }) => {
   const [showDatePicker, setShowDatePicker] = useState(false);
-  console.log(date);
 
   return (
     <fieldset className={`default-modal-fieldset date-range ${customClasses}`}>
