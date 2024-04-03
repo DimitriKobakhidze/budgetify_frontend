@@ -78,7 +78,7 @@ const Login = () => {
   ]);
 
   return (
-    <main className="login-page-main">
+    <main className="auth-page-main">
       <div className="form">
         <h3 className="form-heading">Budgetify</h3>
         {toast.show && (

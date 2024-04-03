@@ -7,11 +7,12 @@ import LoginPage from "./views/Login/LoginPage";
 import Category from "./views/Category/Category";
 import Statistic from "./views/Statistic/Statistic";
 import Error from "./views/Error/Error";
+import Register from "./views/register/register";
 
 export const publicRoutes = [
   {
     path: "/register",
-    elemement: <h1>Registe page</h1>,
+    elemement: <Register />,
   },
   {
     path: "/",

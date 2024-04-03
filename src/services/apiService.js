@@ -9,6 +9,12 @@ export const login = async (userData) => {
   return res.data;
 };
 
+export const register = async (userData) => {
+  const res = await axios.post(`${apiBase}/register`, userData);
+
+  return res.data;
+};
+
 export const verifyAuthToken = async () => {
   const res = await axios.get(`${apiBase}/check-token`);
   return res.data.userData;
