@@ -139,7 +139,7 @@ const Register = () => {
           className="form-button activated-button"
           onClick={handleLogin}
         >
-          Login
+          Register
         </button>
       </div>
     </main>

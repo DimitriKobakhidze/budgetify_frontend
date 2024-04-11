@@ -7,7 +7,7 @@ import LoginPage from "./views/Login/LoginPage";
 import Category from "./views/Category/Category";
 import Statistic from "./views/Statistic/Statistic";
 import Error from "./views/Error/Error";
-import Register from "./views/register/register";
+import Register from "./views/Register/Register";
 
 export const publicRoutes = [
   {
